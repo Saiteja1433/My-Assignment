@@ -1,0 +1,43 @@
+let day = " " ;
+
+function solution(date) {
+
+day = dates[date] ;
+
+return day;
+
+}
+
+if(day != 0)
+
+{
+
+return dayNames[day] ;
+
+}else
+
+{
+
+let beforeDay = day++;
+
+let afterDay = day - 2;
+
+day = (afterDay + beforeDay)/2;
+
+return day;
+
+}
+
+dates = {
+
+12.06.2020:1, 13.06.2020:2, 14.06.2020:3, 15.06.2020:4, 16.06.2020:5, 17.06.2020:6, 18.06.2020:7
+
+}
+
+dayNames = {
+
+1:Monday,2:Tuesday,3:Wednesday,4:Thursday,5:Friday,6:Saturday,7:Sunday
+
+}
+
+solution(13.06.2020) ;
